@@ -9,10 +9,11 @@ import com.learn.thread.create.ThreadDemo;
 public class Test {
 
     public static void main(String[] args) {
+        // 启动ThreadDemo线程
         ThreadDemo threadDemo = new ThreadDemo();
-        threadDemo.run();
+        threadDemo.start();
 
-        RunnableDemo runnableDemo = new RunnableDemo();
-        runnableDemo.run();
+        // 启动RunnableDemo线程
+        new Thread(new RunnableDemo()).start();
     }
 }
