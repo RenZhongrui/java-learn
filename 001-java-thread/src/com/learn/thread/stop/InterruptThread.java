@@ -1,5 +1,8 @@
 package com.learn.thread.stop;
 
+/**
+ * 正常中断线程方式
+ */
 public class InterruptThread implements Runnable {
 
     @Override
